@@ -524,20 +524,20 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                   stats.capacityMultiplier*=2
-                stats.whiteFieldCapacity*=1.75
-                stats.goo*=1.75
+                   stats.capacityMultiplier*=25
+                stats.whiteFieldCapacity*=100
+                stats.goo*=1000
                 stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,0.25)
-                stats.redBeeAbilityRate*=1.2
-                stats.blueBeeAbilityRate*=1.2
-                stats.whiteBeeAbilityRate*=1.2
-                stats.bluePollen*=1.35
-                stats.whitePollen*=1.35
-                stats.redPollen*=1.35
-                stats.whitePollen*=1.5
-                stats.honeyFromTokens*=1.5
-                stats.convertRate*=1.75
-                stats.defense+=0.3
+                stats.redBeeAbilityRate*=5
+                stats.blueBeeAbilityRate*=5
+                stats.whiteBeeAbilityRate*=5
+                stats.bluePollen*=5
+                stats.whitePollen*=5
+                stats.redPollen*=5
+                stats.whitePollen*=5
+                stats.honeyFromTokens*=5
+                stats.convertRate*=5
+                stats.defense+=555
                 player.addEffect('gummyMorphPassive')
                 player.addEffect('coinScatterPassive')
                 player.addEffect('xFlamePassive')
@@ -855,16 +855,16 @@ window.playerGear={
             applyStats:function(stats,player){
 
                 stats.capacity+=40000000
-                stats.capacityMultiplier*=2
-                stats.lootLuck*=50
+                stats.capacityMultiplier*=20
+                stats.lootLuck*=500
                 stats.convertRate*=25
-                stats.honeyFromTokens*=2
-                stats.redBeeAttack+=5
-                stats.redBombPollen*=5
-                stats.blueBeeAttack+=5
-                stats.blueBombPollen*=5
-                stats.whiteBeeAttack+=5
-                stats.whiteBombPollen*=5
+                stats.honeyFromTokens*=20
+                stats.redBeeAttack+=50
+                stats.redBombPollen*=50
+                stats.blueBeeAttack+=50
+                stats.blueBombPollen*=50
+                stats.whiteBeeAttack+=50
+                stats.whiteBombPollen*=50
                 stats.beeEnergy*=5
                 player.addEffect('petalStormPassive')
             },
@@ -1383,12 +1383,22 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.movementCollection+=1
-                stats.walkSpeed*=1.1
-                stats.beeSpeed*=1.05
+                stats.movementCollection+=15
+                stats.walkSpeed*=1.2
+                stats.jumpPower*=1.4
+                stats.pollenFromCoconuts*=2
+                stats.goo*=1.25
+                stats.beeSpeed*=1.3
+                stats.honeyFromTokens*=1.25
+                stats.redPollen*=1.1
+                stats.bluePollen*=1.1
+                stats.whitePollen*=1.1
+                stats.beeAttack*=1.1
+                stats.convertRateAtHive*=2
+                player.addEffect('coconutHastePassive')
             },
             desc:'Move faster and collect pollen as you walk through flowers!<br><br>+1 movement collection<br>x1.05 bee speed<br>x1.1 movespeed',
-            cost:['5000 honey','3 sunflowerSeed','3 blueberry','3 strawberry'],
+            cost:['5 honey'],
         },
 
         hikingBoots:{
