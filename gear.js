@@ -13,7 +13,7 @@ window.playerGear={
         basicSprinkler:{
 
             count:5,
-            diameter:100,
+            diameter:15,
             power:1,
             rate:0.25,
             mesh:function(x,y,z,box,cylinder){
